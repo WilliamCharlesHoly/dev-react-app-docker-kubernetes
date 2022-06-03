@@ -9,11 +9,17 @@ import Github from "../../img/github.png";
 import LinkedIn from "../../img/linkedin.png";
 import Instagram from "../../img/instagram.png";
 import FloatDiv from "../FloatingDiv/FloatingDiv";
+import { motion } from "framer-motion";
 
 const Intro = () => {
   
+  const transition = {
+    duration: 2,
+    type: "spring",
+  };
+
   return (
-    <div className="Intro" id="Intro">
+    <div className="Intro">
       {/* left name side */}
       <div className="i-left">
         <div className="i-name">
@@ -22,7 +28,7 @@ const Intro = () => {
           <span>Data Driven Solution with Software Engineering</span>
           <span>
             <h1>Data science skills using Artificial Intelligent, Deep Learning, Machine Learning Models,
-            Data Visualization, Data Modeling, Data wrangling with
+            Data Visualization, Data Modeling, Data Wrangling, Web Scraping with
             practical hands-on experience on DS portfolio project
             and Django python project & React JS project.
             </h1>
@@ -42,17 +48,23 @@ const Intro = () => {
         <img src={MLRobot} alt="" />
 
 
-        <div style={{top: '-58%', left: '-8.5rem' }}>
-          <img src={AIRobotSmall} />
-        </div>
 
-        <div style={{top: "54%", left: "70%" }}>
+        <motion.img initial ={{top:'-58%', left: '-13.5rem'}} whileInView ={{top:'-58%', left: '-8.5rem'}} transition= {transition} src={AIRobotSmall} alt=""/>
+
+
+        <motion.div 
+         initial ={{top: "34%", left: "70%" }}
+         whileInView ={{top: "54%", left: "70%" }}
+         transition= {transition}>
           <FloatDiv img={ShapeCrown} text1="Customized" text2="Solution" />
-        </div>
+        </motion.div>
 
-        <div style={{top: '20rem', left: '3rem' }}>
+        <motion.div 
+         initial ={{top: "20rem", left: "-10rem" }}
+         whileInView ={{top: "20rem", left: "-1rem" }}
+         transition= {transition}>
           <FloatDiv img={ShapeThumb} text1="Updated" text2="Technology" />
-        </div>
+        </motion.div>
 
       </div>
     </div>
