@@ -25,7 +25,7 @@
   gap: 0.25rem;
 }
 .s-name > :nth-child(1) {
-  color: var(--yellow);
+  color: rgb(239, 87, 150);
   font-weight: bold;
   font-size: 3rem;
 }

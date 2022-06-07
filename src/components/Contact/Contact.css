@@ -79,7 +79,7 @@ textarea{
     justify-content: center;
     position: relative;
     left: -4rem;
-    top: -83rem;
+    top: -79rem;
     grid-area: con-left;
 }
 
@@ -89,7 +89,7 @@ textarea{
     position: relative;
     margin-top: 5rem;
     left: -2.8rem;
-    top: -86rem;
+    top: -82rem;
     grid-area: con-right;
     transform: scale(0.6);
 }
