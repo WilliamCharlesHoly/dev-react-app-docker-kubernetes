@@ -127,3 +127,20 @@
 .w-secCircle > img {
   transform: scale(0.6);
 }
+
+@media only screen and (max-width: 480px) {
+  .TechIntro {
+    flex-direction: column;
+    height: 56rem;
+  }
+
+  .Tech-left {
+    left: -1rem;
+    transform: scale(0.8);
+  }
+
+  .Tech-right{
+    left: -6.5rem;
+    transform: scale(0.75);
+  }
+}

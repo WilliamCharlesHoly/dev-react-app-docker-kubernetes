@@ -71,3 +71,15 @@
 .t-wrapper .swiper-pagination-bullet-active{
     background: var(--orange);
 }
+
+@media only screen and (max-width: 480px) {
+    .t-wrapper {
+      flex-direction: column;
+      height: 56rem;
+      left: -1rem;
+    }
+
+    .testimonial{
+      transform: scale(0.8);
+    }
+}

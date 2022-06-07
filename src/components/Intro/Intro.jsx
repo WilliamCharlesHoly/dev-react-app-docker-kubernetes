@@ -47,11 +47,15 @@ const Intro = () => {
         <img src={MLRobot} alt="" />
 
 
-
-        <motion.img initial ={{top:'-58%', left: '-13.5rem'}} whileInView ={{top:'-58%', left: '-8.5rem'}} transition= {transition} src={AIRobotSmall} alt=""/>
-
+        <motion.div 
+         className="floating-div"
+         initial ={{top:'-58%', left: '-13.5rem'}}
+         whileInView ={{top:'-58%', left: '-8.5rem'}}
+         transition= {transition}>
+        <img src={AIRobotSmall} alt=""/></motion.div>
 
         <motion.div 
+         className="floating-div"
          initial ={{top: "34%", left: "70%" }}
          whileInView ={{top: "54%", left: "70%" }}
          transition= {transition}>
@@ -59,6 +63,7 @@ const Intro = () => {
         </motion.div>
 
         <motion.div 
+         className="floating-div"
          initial ={{top: "20rem", left: "-10rem" }}
          whileInView ={{top: "20rem", left: "-1rem" }}
          transition= {transition}>

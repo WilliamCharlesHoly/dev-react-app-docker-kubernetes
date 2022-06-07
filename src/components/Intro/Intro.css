@@ -70,11 +70,10 @@
   transform: scale(0.26);
 }
 
-@media screen and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
   .Intro {
-    flex-direction: column;
-    gap: 7rem;
-    height: 64rem;
+    flex-direction: column-reverse;
+    height: 56rem;
   }
 
   .i-name > :nth-child(1) {
@@ -88,11 +87,22 @@
   }
 
   .i-right {
-    transform: scale(0.8);
-    left: -3rem;
+    transform: scale(0.5);
+    left: -5.5rem;
   }
+  
   .i-right .blur {
     display: none;
   }
-  
+
+  .floating-div:nth-of-type(1){
+    /* display: none; */
+    top: -16rem !important;
+  }
+
+  .floating-div:nth-of-type(2){
+    /* display: none; */
+    left: 23rem !important;
+  }
+
 }

@@ -34,7 +34,8 @@ const Service = () => {
       <div className="s-right">
        
         <motion.div 
-         initial ={{top:'7%', left: '-10.5rem'}} 
+         className="card-div"
+         initial ={{top:'7%', left: '-8.5rem'}} 
          whileInView ={{top:'7%', left: '-3.5rem'}}
          transition= {transition}>
           <Card emoji={RID}
@@ -42,8 +43,9 @@ const Service = () => {
             detail={"Power Bi, Tableau, Google Data Studio"}/>
         </motion.div>
 
-        <motion.div 
-         initial ={{top:'33%', left: '23.5rem'}} 
+        <motion.div
+         className="card-div" 
+         initial ={{top:'33%', left: '21.5rem'}} 
          whileInView ={{top:'33%', left: '12rem'}}
          transition= {transition}>
           <Card emoji={WD}
@@ -51,16 +53,15 @@ const Service = () => {
             detail={"Html, Css, JavaScript, React, Django"}/>
         </motion.div>
 
-        <motion.div 
-         initial ={{top:'65%', left: '-23.5rem'}} 
+        <motion.div
+         className="card-div" 
+         initial ={{top:'65%', left: '-8.5rem'}} 
          whileInView ={{top:'65%', left: '-5rem'}}
          transition= {transition}>
           <Card
             emoji={PML}
             heading={"Predicting/Forecasting For Business Needs"}
-            detail={
-              "Data Driven Solution Using Python Packages & Machine Learning Models"
-            }/>
+            detail={"Data Driven Solution Using Python Packages & Machine Learning Models"}/>
         </motion.div>
 
       </div>

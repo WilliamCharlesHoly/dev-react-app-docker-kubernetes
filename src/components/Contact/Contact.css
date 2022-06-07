@@ -53,3 +53,16 @@ textarea{
 .t-heading span:nth-of-type(2){
     color: var(--blue);
 } 
+
+@media only screen and (max-width: 480px) {
+.contact-form {
+    flex-direction: column;
+    height: 56rem;
+    left: -10rem;
+}
+
+.c-right{
+    transform: scale(0.8);
+}
+
+}
