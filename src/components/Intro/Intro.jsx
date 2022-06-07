@@ -27,11 +27,10 @@ const Intro = () => {
           <span>TECH Provider</span>
           <span>Data Driven Solution with Software Engineering</span>
           <span>
-            <h1>Data science skills using Artificial Intelligent, Deep Learning, Machine Learning Models,
+            Data science skills using Artificial Intelligent, Deep Learning, Machine Learning Models,
             Data Visualization, Data Modeling, Data Wrangling, Web Scraping with
             practical hands-on experience on DS portfolio project
-            and Django python project & React JS project.
-            </h1>
+            and Django python project & React JS project. 
           </span>
         </div>
 

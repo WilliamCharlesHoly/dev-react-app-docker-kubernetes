@@ -29,7 +29,7 @@
 }
 .i-name > :nth-child(3) {
   font-weight: 100;
-  font-size: 14px;
+  font-size: 20px;
   color: var(--gray);
   margin-top: 10px;
 }
@@ -70,3 +70,29 @@
   transform: scale(0.26);
 }
 
+@media screen and (max-width: 480px) {
+  .Intro {
+    flex-direction: column;
+    gap: 7rem;
+    height: 64rem;
+  }
+
+  .i-name > :nth-child(1) {
+    font-size: 2rem;
+  }
+  .i-name > :nth-child(2) {
+    font-size: 2rem;
+  }
+  .i-name > :nth-child(3) {
+    font-size: 18px;
+  }
+
+  .i-right {
+    transform: scale(0.8);
+    left: -3rem;
+  }
+  .i-right .blur {
+    display: none;
+  }
+  
+}
