@@ -88,7 +88,7 @@
       position: relative;
       height: 48rem;
       left: -0.5rem;
-      top: -58rem;
+      top: -54rem;
     }
 
     .t-heading{
@@ -103,7 +103,7 @@
 
     .cert-bottom{
       position: relative;
-      top: -8rem;
+      top: -4rem;
       left: 0.5rem;
       transform: scale(0.9);
     }
