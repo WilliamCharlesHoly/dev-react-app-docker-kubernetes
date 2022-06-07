@@ -1,0 +1,129 @@
+.TechIntro {
+  display: flex;
+  height: 77vh;
+  margin-top: 16rem;
+}
+
+/* left side styling */
+.Tech-left {
+  display: flex;
+  position: relative;
+  flex: 1;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 15rem;
+}
+.experience {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  height: 30vh;
+  margin-bottom: 8rem;
+  /* darkmode */
+  color: var(--black);
+}
+.achievement{
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+}
+.circle {
+    width: 4rem;
+    height: 4rem;
+    background: white;
+    border-radius: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+.circle::before {
+    border-radius: 100%;
+    content: '';
+    background-image: linear-gradient(to bottom, #87e6fb 0%, #ffc05c 100%);
+    top: -8px;
+    left: -8px;
+    bottom: -8px;
+    right: -8px;
+    position: absolute;
+    z-index:-1;
+    box-shadow: var(--boxShadow);
+}
+
+.achievement span:nth-of-type(2){
+    color: var(--orange);
+}
+
+/* right side styling */
+.Tech-right {
+  flex: 1;
+  position: relative;
+  margin-top: 8rem;
+}
+.Tech-right > * {
+  position: absolute;
+  z-index: 1;
+}
+
+.w-right {
+  left: 3rem;
+}
+
+.w-mainCircle {
+  left: 3rem;
+  position: relative;
+  width: 18rem;
+  height: 18rem;
+  border-radius: 100%;
+  box-shadow: var(--smboxShadow);
+  top: 2rem;
+  background: white;
+  /* darkMode */
+  z-index: 2;
+}
+.w-mainCircle > * {
+  position: absolute;
+}
+.w-mainCircle > :nth-child(1) {
+  top: -3rem;
+  left: 6rem;
+}
+.w-mainCircle > :nth-child(2) {
+  left: -3rem;
+  top: 5rem;
+}
+.w-mainCircle > :nth-child(3) {
+  left: 6rem;
+  top: 5rem;
+}
+.w-mainCircle > :nth-child(4) {
+  left: 15rem;
+  top: 5rem;
+}
+.w-mainCircle > :nth-child(5) {
+  left: 6rem;
+  top: 13rem;
+}
+
+
+.w-secCircle {
+  width: 6rem;
+  height: 6rem;
+  position: absolute;
+  border-radius: 100%;
+  border: 5px solid #ebebeb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: "none";
+  box-shadow: var(--smboxShadow);
+  background: white;
+}
+
+.w-secCircle > img {
+  transform: scale(0.6);
+}

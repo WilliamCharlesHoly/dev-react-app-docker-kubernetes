@@ -1,7 +1,7 @@
 .Serve {
   display: flex;
   height: 77vh;
-  margin-top: 6rem;
+  margin-top: 11rem;
 }
 
 /* left side styling */
@@ -11,6 +11,8 @@
   flex: 1;
   flex-direction: column;
   gap: 2rem;
+  margin-top: 3rem;
+  left: 7rem;
 }
 .s-name {
   display: flex;
@@ -35,7 +37,7 @@
 }
 .s-button {
   margin-top: 1rem;
-  width: 9rem;
+  width: 11rem;
   height: 2rem;
 }
 

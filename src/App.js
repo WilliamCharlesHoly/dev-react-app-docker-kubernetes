@@ -6,6 +6,7 @@ import Certificate from "./components/Certificate/Certificate";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import Service from "./components/Service/Service";
+import Technology from "./components/Technology/Technology";
 
 function App() {
     return (
@@ -13,6 +14,7 @@ function App() {
      <Navbar/>
      <Intro/>
      <Service/>
+     <Technology/>
      <Portfolio/>
      <Certificate/>
      <Contact/>

@@ -1,7 +1,7 @@
 import React from "react";
 import "./Service.css";
 import { motion } from "framer-motion";
-import Resume from './resume.pdf';
+import Profile from './Profile.pdf';
 import Card from "../Card/Card";
 import WD from "../../img/WD.png";
 import PML from "../../img/PML.png";
@@ -19,11 +19,11 @@ const Service = () => {
       {/* left name side */}
       <div className="s-left">
         <div className="s-name">
-          {/* yahan change hy darkmode ka */}
+
           <span>My Awesome</span>
           <span>services</span>
           <span>Total TECH Solution for business needs</span>
-          <a href={Resume} download>
+          <a href={Profile} download>
             <button className="button s-button">Download Profile</button>
           </a>
           <div className="blur s-blur1" style={{ background: "#ABF1FF94" }}></div>
@@ -34,8 +34,8 @@ const Service = () => {
       <div className="s-right">
        
         <motion.div 
-         initial ={{top:'5%', left: '-13.5rem'}} 
-         whileInView ={{top:'5%', left: '-8.5rem'}}
+         initial ={{top:'7%', left: '-10.5rem'}} 
+         whileInView ={{top:'7%', left: '-3.5rem'}}
          transition= {transition}>
           <Card emoji={RID}
             heading={"Reports/Insight/Dashboard"}
@@ -43,8 +43,8 @@ const Service = () => {
         </motion.div>
 
         <motion.div 
-         initial ={{top:'16%', left: '23.5rem'}} 
-         whileInView ={{top:'16%', left: '8rem'}}
+         initial ={{top:'33%', left: '23.5rem'}} 
+         whileInView ={{top:'33%', left: '12rem'}}
          transition= {transition}>
           <Card emoji={WD}
             heading={"Web Development"}
@@ -52,8 +52,8 @@ const Service = () => {
         </motion.div>
 
         <motion.div 
-         initial ={{top:'62%', left: '-23.5rem'}} 
-         whileInView ={{top:'62%', left: '-8rem'}}
+         initial ={{top:'65%', left: '-23.5rem'}} 
+         whileInView ={{top:'65%', left: '-5rem'}}
          transition= {transition}>
           <Card
             emoji={PML}
