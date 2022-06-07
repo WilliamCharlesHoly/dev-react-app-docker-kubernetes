@@ -9,7 +9,6 @@ const Navbar = () => {
       {/* left */}
       <div className="n-left">
         <div className="n-name">William</div>
-        <span>Toggle</span>
       </div>
       {/* right */}
       <div className="n-right">
