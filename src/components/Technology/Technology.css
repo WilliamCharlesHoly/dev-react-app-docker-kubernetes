@@ -1,18 +1,23 @@
 .TechIntro {
-  display: flex;
-  height: 77vh;
-  margin-top: 16rem;
+  display: grid;
+  height: 100vh;
+  margin-top: 83px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "techno-left techno-right";
 }
 
 /* left side styling */
-.Tech-left {
+#techno-left{
   display: flex;
   position: relative;
   flex: 1;
   flex-direction: column;
   gap: 2rem;
   margin-top: 15rem;
+  grid-area: techno-left;
 }
+
 .experience {
   display: flex;
   align-items: center;
@@ -59,11 +64,13 @@
 }
 
 /* right side styling */
-.Tech-right {
+#techno-right{
   flex: 1;
   position: relative;
   margin-top: 8rem;
+  grid-area: techno-right;
 }
+
 .Tech-right > * {
   position: absolute;
   z-index: 1;
@@ -129,18 +136,33 @@
 }
 
 @media only screen and (max-width: 360px) {
+
   .TechIntro {
-    flex-direction: column;
-    height: 56rem;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "techno-left" "techno-right" ;
   }
 
-  .Tech-left {
-    left: -1rem;
-    transform: scale(0.6);
+  #techno-left{
+    display: flex;
+    position: relative;
+    transform: scale(0.65); 
+    top: -14rem;
+    left: -3.8rem;
+    grid-area: techno-left;
   }
 
-  .Tech-right{
+  #techno-right{
+    display: flex;
+    position: relative;
+    transform: scale(0.65); 
+    top: -25rem;
     left: -6.5rem;
-    transform: scale(0.55);
+    grid-area: techno-right;
   }
+
+
+
 }

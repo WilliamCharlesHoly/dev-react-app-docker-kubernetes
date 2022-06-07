@@ -16,11 +16,12 @@ const Portfolio = () => {
       <span>Project</span>
       {/* slider */}
       <Swiper
-        spaceBetween={3}
+        spaceBetween={30}
         slidesPerView={3}
         grabCursor={true}
         className="portfolio-slider"
       >
+
         <SwiperSlide>
           <img src={DSP1} alt="" />
         </SwiperSlide>

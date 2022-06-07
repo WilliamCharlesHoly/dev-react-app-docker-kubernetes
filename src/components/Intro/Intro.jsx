@@ -21,7 +21,7 @@ const Intro = () => {
   return (
     <div className="Intro">
       {/* left name side */}
-      <div className="i-left">
+      <div className="i-left" id="grid-left">
         <div className="i-name">
           {/* yahan change hy darkmode ka */}
           <span>TECH Provider</span>
@@ -42,22 +42,22 @@ const Intro = () => {
         </div>
       </div>
       {/* right image side */}
-      <div className="i-right">
+      <div className="i-right" id="grid-right">
         <img src={VectorReact} alt="" />
         <img src={MLRobot} alt="" />
 
 
         <motion.div 
          className="floating-div"
-         initial ={{top:'-58%', left: '-13.5rem'}}
-         whileInView ={{top:'-58%', left: '-8.5rem'}}
+         initial ={{top:'-38%', left: '-13.5rem'}}
+         whileInView ={{top:'-38%', left: '-8.5rem'}}
          transition= {transition}>
         <img src={AIRobotSmall} alt=""/></motion.div>
 
         <motion.div 
          className="floating-div"
-         initial ={{top: "34%", left: "70%" }}
-         whileInView ={{top: "54%", left: "70%" }}
+         initial ={{top: "8rem", left: "25rem" }}
+         whileInView ={{top: "16rem", left: "25rem" }}
          transition= {transition}>
           <FloatDiv img={ShapeCrown} text1="Customized" text2="Solution" />
         </motion.div>

@@ -23,7 +23,7 @@ const Contact = () => {
   return (
     <div className="contact-form" id='Contact'>
       {/* left side copy and paste from work section */}
-      <div className="w-left">
+      <div id="con-left">
         <div className="t-heading">
           {/* darkMode */}
           <span>Get in Touch</span><br/>
@@ -35,7 +35,7 @@ const Contact = () => {
         </div>
       </div>
       {/* right side form */}
-      <div className="c-right">
+      <div className="c-right" id="con-right">
 
       <form ref={form} onSubmit={sendEmail}>
           <input type="text" name="user_name" className="user"  placeholder="Name"/>

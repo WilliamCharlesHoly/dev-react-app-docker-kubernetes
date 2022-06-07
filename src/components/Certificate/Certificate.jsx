@@ -40,23 +40,26 @@ const Certificate = () => {
       <div className="blur" style={{ background: "var(--skyblue)", top: '23rem', left: '3rem' }}></div> 
 
       </div>
-      <Swiper
-        // install Swiper modules
-        modules={[Pagination]}
-        slidesPerView={1}
-        pagination={{ clickable: true }}
-      >
-        {badges.map((badge, index) => {
-          return (
-            <SwiperSlide key={index}>
-              <div className="testimonial">
-                <img src={badge.img} alt="" />
-                <span>{badge.review}</span>
-              </div>
-            </SwiperSlide>
-          );
-        })}
-      </Swiper>
+
+      <div className="cert-bottom">
+        <Swiper
+          // install Swiper modules
+          modules={[Pagination]}
+          slidesPerView={1}
+          pagination={{ clickable: true }}
+        >
+          {badges.map((badge, index) => {
+            return (
+              <SwiperSlide key={index}>
+                <div className="testimonial">
+                  <img src={badge.img} alt="" />
+                  <span>{badge.review}</span>
+                </div>
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
+      </div>
     </div>
   );
 };

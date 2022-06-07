@@ -1,17 +1,24 @@
 .Intro {
-  display: flex;
-  height: 77vh;
-  margin-top: 6rem;
+  display: grid;
+  height: 100vh;
+  margin-top: 83px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "grid-left grid-right";
 }
 
 /* left side styling */
-.i-left {
+
+#grid-left{
+  grid-area: grid-left;
   display: flex;
   position: relative;
   flex: 1;
   flex-direction: column;
   gap: 2rem;
+  left: 2rem;
 }
+
 .i-name {
   display: flex;
   flex-direction: column;
@@ -32,6 +39,7 @@
   font-size: 20px;
   color: var(--gray);
   margin-top: 10px;
+  padding-right: 55px;
 }
 .i-button {
   width: 6rem;
@@ -49,10 +57,13 @@
   cursor: pointer;
 }
 /* right side styling */
-.i-right {
+
+#grid-right{
   flex: 1;
   position: relative;
+  grid-area: grid-right;
 }
+
 .i-right > * {
   position: absolute;
   z-index: 1;
@@ -72,10 +83,39 @@
 
 @media only screen and (max-width: 360px) {
   .Intro {
-    flex-direction: column-reverse;
-    height: 54rem;
-    width: 100%;
-    margin: 0px 0px 0px 0px;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "grid-right" "grid-left" ;
+  }
+
+  #grid-left{
+    grid-area: grid-left;
+    display: flex;
+    position: relative;
+    margin-top: 15px;
+    gap: 0;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    left: 0.5rem;
+    top: 2.5rem;
+  }
+
+  #grid-right{
+    position: relative;
+    grid-area: grid-right;
+    margin-top: 5px;
+    gap: 0;
+    top: -5rem;
+    left: -4.5rem;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    transform: scale(0.45);
   }
 
   .i-name > :nth-child(1) {
@@ -88,12 +128,12 @@
     font-size: 18px;
   }
 
-  .i-right {
-    transform: scale(0.4);
-    left: -5rem;
-  }
-
   .i-icons {
+    margin-left: 1px;
+    margin-right: 1px;
+    margin-bottom: 1px;
+    margin-top: 1px;
+    display: flex;
     transform: scale(0.9);
   }
   
@@ -108,7 +148,7 @@
 
   .floating-div:nth-of-type(2){
     /* display: none; */
-    left: 23rem !important;
+    left: 22rem !important;
   }
 
 }

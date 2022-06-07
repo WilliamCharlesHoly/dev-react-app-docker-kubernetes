@@ -17,7 +17,7 @@ const Service = () => {
   return (
     <div className="Serve" id='Service'>
       {/* left name side */}
-      <div className="s-left">
+      <div className="s-left" id="service-left">
         <div className="s-name">
 
           <span>My Awesome</span>
@@ -31,12 +31,12 @@ const Service = () => {
 
       </div>
       {/* right image side */}
-      <div className="s-right">
+      <div className="s-right" id="service-right">
        
         <motion.div 
          className="card-div"
-         initial ={{top:'7%', left: '-8.5rem'}} 
-         whileInView ={{top:'7%', left: '-3.5rem'}}
+         initial ={{top:'7%', left: '-9.5rem'}} 
+         whileInView ={{top:'7%', left: '-6rem'}}
          transition= {transition}>
           <Card emoji={RID}
             heading={"Reports/Insight/Dashboard"}
@@ -46,7 +46,7 @@ const Service = () => {
         <motion.div
          className="card-div" 
          initial ={{top:'33%', left: '21.5rem'}} 
-         whileInView ={{top:'33%', left: '12rem'}}
+         whileInView ={{top:'33%', left: '9rem'}}
          transition= {transition}>
           <Card emoji={WD}
             heading={"Web Development"}
@@ -55,8 +55,8 @@ const Service = () => {
 
         <motion.div
          className="card-div" 
-         initial ={{top:'65%', left: '-8.5rem'}} 
-         whileInView ={{top:'65%', left: '-5rem'}}
+         initial ={{top:'48%', left: '-12rem'}} 
+         whileInView ={{top:'48%', left: '-6rem'}}
          transition= {transition}>
           <Card
             emoji={PML}

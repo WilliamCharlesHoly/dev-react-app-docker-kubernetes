@@ -13,7 +13,7 @@ const Technology = () => {
   return (
     <div className="TechIntro" id='Technology'>
       {/* left name side */}
-      <div className="Tech-left">
+      <div className="Tech-left" id='techno-left'>
         <div className="experience" id='experience'>
           <div className="achievement">
             {/* darkMode */}
@@ -34,7 +34,7 @@ const Technology = () => {
         </div>
       </div>
       {/* right image side */}
-      <div className="Tech-right">
+      <div className="Tech-right" id='techno-right'>
         <div className="w-right">
           <motion.div
             initial={{ rotate: 45 }}

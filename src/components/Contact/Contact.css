@@ -1,18 +1,27 @@
 .contact-form{
-    padding: 0 3rem 0 3rem;
-    display: flex;
-    height: 80vh;
-    margin-top: 4rem;
-      /* scroll */
-  padding-top: 3rem;
+    display: grid;
+    height: 60vh;
+    margin-top: 83px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "con-left con-right";
 }
 
-.c-right{
+#con-left{
     display: flex;
     justify-content: center;
     position: relative;
-    flex: 1;
     margin-top: 5rem;
+    grid-area: con-left;
+}
+
+#con-right{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 5rem;
+    left: -11rem;
+    grid-area: con-right;
 }
 
 .c-right>form
@@ -56,12 +65,32 @@ textarea{
 
 @media only screen and (max-width: 360px) {
 .contact-form {
-    flex-direction: column;
-    height: 56rem;
-    left: -30rem;
+    display: grid;
+    height: 1vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "con-left" "con-right";
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
-.c-right{
+#con-left{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: -4rem;
+    top: -87rem;
+    grid-area: con-left;
+}
+
+#con-right{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 5rem;
+    left: -2.8rem;
+    top: -90rem;
+    grid-area: con-right;
     transform: scale(0.6);
 }
 

@@ -1,19 +1,24 @@
 .Serve {
-  display: flex;
-  height: 77vh;
-  margin-top: 11rem;
+  display: grid;
+  height: 100vh;
+  margin-top: 83px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "service-left service-right";
 }
 
 /* left side styling */
-.s-left {
+#service-left{
   display: flex;
   position: relative;
   flex: 1;
   flex-direction: column;
   gap: 2rem;
   margin-top: 3rem;
-  left: 7rem;
+  left: 9rem;
+  grid-area: service-left;
 }
+
 .s-name {
   display: flex;
   flex-direction: column;
@@ -42,10 +47,13 @@
 }
 
 /* right side styling */
-.s-right {
+
+#service-right{
   flex: 1;
   position: relative;
+  grid-area: service-right;
 }
+
 .s-right > * {
   position: absolute;
   z-index: 1;
@@ -53,29 +61,34 @@
 
 @media only screen and (max-width: 360px) {
   .Serve {
-    flex-direction: column;
-    height: 56rem;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "service-left" "service-right" ;
   }
 
-  .s-left {
-    left: -1rem;
+  #service-left{
+    display: flex;
+    position: relative;
+    gap: 2rem;
+    top: -1rem;
+    left: 2rem;
+    grid-area: service-left;
   }
 
-  .s-right {
-    transform: scale(0.45);
+  #service-right{
     position: static;
-  }
-
-  .card-div:nth-of-type(1){
-
+    grid-area: service-right;
+    transform: scale(0.45); 
   }
 
   .card-div:nth-of-type(2){
-
+    margin-left: 1rem;
   }
 
   .card-div:nth-of-type(3){
-    margin-top: 2rem;
-
+    margin-top: 10rem;
+    left: -6rem;
   }
 }
