@@ -128,7 +128,7 @@
   transform: scale(0.6);
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 360px) {
   .TechIntro {
     flex-direction: column;
     height: 56rem;
