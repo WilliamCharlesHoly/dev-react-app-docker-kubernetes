@@ -52,7 +52,7 @@
 
   .portfolio-slider{
     position: relative;
-    top: 0rem;
+    top: -2rem;
     transform: scale(0.5);
   }
   

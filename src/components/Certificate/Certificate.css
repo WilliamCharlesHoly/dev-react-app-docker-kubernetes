@@ -103,7 +103,7 @@
 
     .cert-bottom{
       position: relative;
-      top: -4rem;
+      top: -10rem;
       left: 0.5rem;
       transform: scale(0.9);
     }
