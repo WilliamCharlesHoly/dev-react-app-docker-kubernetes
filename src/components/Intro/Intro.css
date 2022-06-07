@@ -87,8 +87,12 @@
   }
 
   .i-right {
-    transform: scale(0.5);
-    left: -5.5rem;
+    transform: scale(0.4);
+    left: -10.5rem;
+  }
+
+  .i-icons {
+    transform: scale(0.9);
   }
   
   .i-right .blur {

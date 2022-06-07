@@ -136,11 +136,11 @@
 
   .Tech-left {
     left: -1rem;
-    transform: scale(0.8);
+    transform: scale(0.6);
   }
 
   .Tech-right{
     left: -6.5rem;
-    transform: scale(0.75);
+    transform: scale(0.55);
   }
 }

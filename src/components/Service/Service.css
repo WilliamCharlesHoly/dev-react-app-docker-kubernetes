@@ -62,8 +62,7 @@
   }
 
   .s-right {
-    transform: scale(0.6);
-    left: -3rem;
+    transform: scale(0.45);
     position: static;
   }
 

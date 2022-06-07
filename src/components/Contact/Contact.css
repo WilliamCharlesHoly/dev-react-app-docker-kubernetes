@@ -58,11 +58,11 @@ textarea{
 .contact-form {
     flex-direction: column;
     height: 56rem;
-    left: -10rem;
+    left: -30rem;
 }
 
 .c-right{
-    transform: scale(0.8);
+    transform: scale(0.6);
 }
 
 }
