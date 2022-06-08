@@ -55,8 +55,8 @@ const Service = () => {
 
         <motion.div
          className="card-div" 
-         initial ={{top:'48%', left: '-12rem'}} 
-         whileInView ={{top:'48%', left: '-6rem'}}
+         initial ={{top:'54%', left: '-12rem'}} 
+         whileInView ={{top:'54%', left: '-8rem'}}
          transition= {transition}>
           <Card
             emoji={PML}

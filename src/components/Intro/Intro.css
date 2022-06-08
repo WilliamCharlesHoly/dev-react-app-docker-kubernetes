@@ -1,7 +1,7 @@
 .Intro {
   display: grid;
   height: 100vh;
-  margin-top: 83px;
+  margin-top: 103px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "grid-left grid-right";
@@ -100,7 +100,7 @@
     padding-right: 0px;
     padding-top: 3px;
     padding-bottom: 3px;
-    left: 0.5rem;
+    left: 1.5rem;
     top: 5.5rem;
   }
 
@@ -110,7 +110,7 @@
     margin-top: 5px;
     gap: 0;
     top: -5rem;
-    left: -4.5rem;
+    left: -4rem;
     padding-left: 0px;
     padding-right: 0px;
     padding-top: 3px;
@@ -122,7 +122,8 @@
     font-size: 2rem;
   }
   .i-name > :nth-child(2) {
-    font-size: 2rem;
+    font-size: 30px;
+    padding-right: 45px;
   }
   .i-name > :nth-child(3) {
     font-size: 18px;
@@ -134,7 +135,7 @@
     margin-bottom: 1px;
     margin-top: 1px;
     display: flex;
-    transform: scale(0.9);
+    transform: scale(0.7);
   }
   
   .i-right .blur {
