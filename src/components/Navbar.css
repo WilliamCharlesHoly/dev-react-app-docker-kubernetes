@@ -70,14 +70,14 @@
   .nav-item {
     display: flex;
     align-items: center;
-    height: 70px;
+    height: 80px;
   }
 
   .nav-menu {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 88vh;
+    height: 82vh;
     position: absolute;
     top: 100px;
     left: -100%;
