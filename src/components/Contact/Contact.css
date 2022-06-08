@@ -65,7 +65,7 @@ textarea{
 @media only screen and (max-width: 360px) {
 .contact-form {
     display: grid;
-    height: 14vh;
+    height: 28vh;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: "con-left" "con-right";
