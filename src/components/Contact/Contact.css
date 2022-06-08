@@ -1,6 +1,6 @@
 .contact-form{
     display: grid;
-    height: 60vh;
+    height: 70vh;
     margin-top: 83px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
@@ -21,16 +21,15 @@
     position: relative;
     margin-top: 5rem;
     left: -11rem;
+    height: 100%;
     grid-area: con-right;
 }
 
-.c-right>form
-{
+.c-right>form{
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    align-items: center;
-    
+    align-items: center;   
 }
 
 .c-right .user{
