@@ -15,7 +15,7 @@ spec:
         app: nginx
     spec:
       containers:
-      - name: nginx-react
+      - name: nginx
         image: williamcharlesholy/dev-react-app:yarnnginxloc1
         ports:
         - containerPort: 80
