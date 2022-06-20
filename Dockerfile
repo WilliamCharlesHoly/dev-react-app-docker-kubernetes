@@ -1,17 +1,20 @@
-FROM node:18-alpine
+FROM node:18-alpine AS builder
 
-# set the working dir for container
 WORKDIR /app
 
-# copy the json file first
-COPY ./package.json package.json
-COPY ./package-lock.json package-lock.json
-
-# install npm dependencies
-RUN npm install
-
-# copy other project files
 COPY . .
 
-# build the folder
-CMD [ "npm", "run", "start" ]
+RUN yarn install
+
+COPY . .
+
+RUN ["yarn", "build"]
+
+
+FROM nginx:alpine
+
+WORKDIR /usr/share/nginx/html
+
+COPY --from=builder /app/build .
+
+CMD ["nginx", "-g", "daemon off;"]
