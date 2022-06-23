@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) & Docker file and deployment.yaml file for kubernetes.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) , Docker file and deployment.yaml file for kubernetes.
 
 ## Available Scripts
 
